@@ -1,6 +1,6 @@
 <template>
   <div >
-    <div class="border border-2 p-2 text-3xl underline">
+    <div class="border-2 p-2 text-3xl underline">
 
     {{title}}
     </div>

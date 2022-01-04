@@ -1,4 +1,10 @@
 <template>
+
+  <form @submit.prevent="addTask" class="w-full h-full">
+    <input type="text" v-model.lazy="newTask" placeholder="New task" class="border-2 p-2 m-2 border-black w-[50%]">
+    <button type="submit" @submit.prevent="" class="border bg-green-300 h-[10vh] w-32 rounded text-2xl p-2 m-2">Submit</button>
+  </form>
+
   <div class="p-6  md:flex justify-evenly h-screen">
     <TodoList
       class="rounded border-4 p-4 h-[30vh] my-2 overflow-auto border-gray-700 md:w-1/4 md:h-[80vh] "
@@ -70,10 +76,10 @@ export default {
     return {
       newTask: "",
       todo: [
-        { name: "code sign up page" },
-        { name: "test dashboard" },
-        { name: "style registration" },
-        { name: "help with design" },
+        { name: "makan nasi" },
+        { name: "bagi makan ayam" },
+        { name: "tengok bulan" },
+        { name: "lompat katak" },
       ],
 
       Progress: [],
@@ -81,9 +87,9 @@ export default {
     };
   },
   methods: {
-    add() {
+    addTask() {
       if (this.newTask) {
-        this.arrBacklog.push({ name: this.newTask });
+        this.todo.unshift({ name: this.newTask });
         this.newTask = "";
       }
     },
