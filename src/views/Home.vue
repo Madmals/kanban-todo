@@ -31,6 +31,7 @@
           :key="task.name"
           :item="todo"
           @edit-item="edit(index, 'todo')"
+          @del-item="del(index, 'todo')"
         >
           {{ task.name }}
           <template #icon> </template>
@@ -53,6 +54,7 @@
           :key="index"
           :item="Progress"
           @edit-item="edit(index, 'Progress')"
+          @del-item="del(index, 'Progress')"
         >
           {{ task.name }}
 
@@ -76,6 +78,7 @@
           :key="index"
           :item="Completed"
           @edit-item="edit(index, 'Completed')"
+          @del-item="del(index, 'Completed')"
         >
           {{ task.name }}
 
@@ -146,6 +149,18 @@ export default {
       }
       this.editableTask = index;
     },
+    del(index,item){
+      console.log(index,item)
+      this.option = item
+      if(this.option == 'todo'){
+        this.todo.splice(index,1)
+      }else if(this.option == 'Progress'){
+        this.Progress.splice(index,1)
+      }else
+      {
+        this.Completed.splice(index,1)
+      }
+    }
   },
 };
 </script>

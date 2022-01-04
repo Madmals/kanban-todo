@@ -23,6 +23,9 @@ export default {
     edits() {
       this.$emit("edit-item",true)
     },
+    dels() {
+      this.$emit("del-item",true)
+    },
   },
 };
 </script>
