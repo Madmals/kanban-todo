@@ -1,7 +1,6 @@
 <template>
   <div >
     <div class="border-2 p-2 text-3xl underline">
-
     {{title}}
     </div>
     <slot></slot>
@@ -12,6 +11,11 @@
 export default {
   name: "TodoList",
   props: ['title'],
+  methods: {
+    test2(){
+      this.$emit('edit-item')
+    }
+  },
 };
 </script>
 
