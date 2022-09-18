@@ -12,6 +12,6 @@ const emitter = mitt();
 library.add(faUserSecret)
 
 const app = createApp(App)
-	app.config.globalProperties.emitter = emitter
-	app.component("font-awesome-icon", FontAwesomeIcon)
-	app.use(router).mount("#app");
+app.config.globalProperties.emitter = emitter
+app.component("font-awesome-icon", FontAwesomeIcon)
+app.use(router).mount("#app");

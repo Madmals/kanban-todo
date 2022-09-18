@@ -1,5 +1,5 @@
 <template>
-  <div class="h-50 bg-green-400 p-4" >
+  <div class="h-50 bg-gray-500 p-4" >
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div>

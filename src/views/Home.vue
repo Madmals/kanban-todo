@@ -63,7 +63,7 @@
       </draggable>
     </TodoList>
     <TodoList
-      class="rounded border-4 p-4 h-[30vh] border-green-700 md:w-1/4 md:h-[80vh]"
+      class="rounded border-4 p-4 h-[30vh] border-silver-700 md:w-1/4 md:h-[80vh]"
       title="Completed"
     >
       <draggable
@@ -108,10 +108,10 @@ export default {
       option: "",
       editableTask: null,
       todo: [
-        { name: "makan nasi" },
-        { name: "bagi makan ayam" },
-        { name: "tengok bulan" },
-        { name: "lompat katak" },
+        { name: "ok" },
+        { name: "lagi ok" },
+        { name: "ok noh" },
+        { name: "haa ok" },
       ],
 
       Progress: [],
