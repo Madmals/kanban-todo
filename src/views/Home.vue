@@ -108,10 +108,10 @@ export default {
       option: "",
       editableTask: null,
       todo: [
-        { name: "ok" },
-        { name: "lagi ok" },
-        { name: "ok noh" },
-        { name: "haa ok" },
+        { name: "one" },
+        { name: "dua" },
+        { name: "three" },
+        { name: "empat" },
       ],
 
       Progress: [],
@@ -150,7 +150,6 @@ export default {
       this.editableTask = index;
     },
     del(index,item){
-      console.log(index,item)
       this.option = item
       if(this.option == 'todo'){
         this.todo.splice(index,1)

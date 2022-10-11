@@ -1,5 +1,5 @@
 <template>
   <div class="about">
-    <h1>Kanban Board</h1>
+    <h1>To do drag</h1>
   </div>
 </template>
